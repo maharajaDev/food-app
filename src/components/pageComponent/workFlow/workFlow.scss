@@ -1,0 +1,24 @@
+.workPartCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    .imgPart{
+        font-size: 8rem;
+        display: flex;
+        filter: drop-shadow(5px 5px 5px rgba(255, 179, 14, 0.3));
+        color:var(--primaryColor);
+    }
+    .contentPart{
+        text-align: center;
+        h3{
+            font-size: 1.3rem;
+        }
+        p{
+            color:gray;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+    }
+}

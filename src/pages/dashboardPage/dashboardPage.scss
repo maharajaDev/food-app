@@ -1,0 +1,41 @@
+.dashboardPage {
+    .discountSeaction {
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        padding: 1rem 13vw;
+        margin-top: 3rem;
+
+        >div {
+            width: calc(100% / 4 - 2rem);
+        }
+    }
+
+    .workSeaction {
+        padding:3rem 13vw;
+        margin-top: 3rem;
+        background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+        .titlePart{
+            width: 100%;
+            text-align: center;
+            color:var(--secondaryColor);
+            text-transform: capitalize;
+            margin-bottom: 5rem;
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+        .cardWrapper {
+
+            width: 100%;
+            display: flex;
+            gap: 2rem;
+         
+
+            >div {
+                width: calc(100% / 4 - 2rem);
+            }
+        }
+
+    }
+}

@@ -1,0 +1,116 @@
+.bannerSeaction{
+    padding: 5em 4vw;
+    height: 90vh;
+    margin-top:4rem;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5vw;
+    .leftPart{
+        width: 40%;
+        .contentPart{
+            h2{
+                color:#fff;
+                font-size: 4rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 1.7rem;
+                color:#4e4e4e;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+        }
+        .findFoodPart{
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 2rem;
+            ul{
+                display: flex;
+                gap:1rem;
+                margin-bottom: 1rem;
+                li{
+                    button{
+                        display: flex;
+                        align-items: center;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        gap:0.5rem;
+                        padding:0.5rem 1rem;
+                        color:gray;
+                        background-color: #fff;
+                        border:none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: all 0.4s;
+                        &:hover,
+                        &.active{
+                            color:var(--secondaryColor);
+                            background-color: #f1722833;
+                        }
+                    }
+                }
+            }
+            .searchInput{
+                width: 100%;
+                gap:1rem;
+                display: flex;
+                transition: all 0.3s;
+                padding: 0.2rem 0.5rem;
+                border:1px solid transparent;
+                background-color: #fff;
+                box-shadow: 0 0 50px #ffb30e28;
+                border-radius: 5px;
+                align-items: center;
+                >div{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    .iconImg{
+                        position: absolute;
+                        top:50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        width: fit-content;
+                        display: flex;
+                        padding: 0 0.5rem;
+                        font-size: 1.4rem;
+                        background-color: transparent;
+                        border:none;
+                        color:var(--primaryColor);
+                    }
+                    input{
+                        width: 100%;
+                        font-size: 0.9rem;
+                        padding: 0.5rem 0.8rem;
+                        background-color:rgba(211, 211, 211, 0.277);
+                        border:1px solid transparent;
+                        text-indent: 1.5rem;
+                        &:focus{
+                            border-color:var(--primaryColor);
+    
+                        }
+                        &::placeholder{
+                            color:#909090;
+                            text-transform: capitalize;
+                        }
+        
+                    }
+                }
+                button{
+                    width: 12rem;
+                }
+            }
+        }
+    }
+    .rightPart{
+        width: 35%;
+        img{
+            width: 100%;
+        }
+
+    }
+}
