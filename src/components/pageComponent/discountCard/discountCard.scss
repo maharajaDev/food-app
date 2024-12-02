@@ -23,8 +23,10 @@
             border-radius: 0 40px 0 0;
             bottom: 0;
             left: 0;
-            width: 140px;
-            height: 80px;
+            // width: 140px;
+            // height: 80px;
+            width: 10vw;
+            height: 35%;
             display: flex;
             gap: 0.5rem;
             justify-content: center;
@@ -34,7 +36,8 @@
             font-weight: 600;
 
             h3 {
-                font-size: 3rem;
+                font-size: max(2rem,3.2vw);
+                // font-size: 3rem;
             }
         }
     }
@@ -59,6 +62,22 @@
             transition: all 0.4s;
             color: var(--secondaryColor);
             background-color: #f1722833;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .discountCardParent .imgPart .tagText{
+        width: 50%;
+        h3{
+            font-size: max(1.5rem,6vw);
+        }
+    }
+}
+@media (max-width: 375px) {
+    .discountCardParent .imgPart .tagText{
+        h3{
+            font-size: max(3rem,6vw);
         }
     }
 }

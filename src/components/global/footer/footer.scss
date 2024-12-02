@@ -1,5 +1,5 @@
 .footerPart {
-    padding: 4rem 13vw;
+    padding: 4rem 13vw 0;
     background-color: #212121;
     color: #fff;
 
@@ -116,6 +116,7 @@
                     background-color: gray;
                     padding: 0.5rem;
                     border-radius: 10px;
+
                     span {
                         font-size: 1.5rem;
                         display: flex;
@@ -142,6 +143,84 @@
                     background-color: var(--primaryColor);
                 }
             }
+        }
+    }
+    .copyRightPart{
+        span{
+            font-size: 0.8rem;
+            padding-bottom: 1rem;
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .footerPart {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerPart .cityPart ul {
+        justify-content: center;
+
+        li {
+            width: 30%;
+        }
+    }
+
+    .footerPart .linkListPart {
+        flex-wrap: wrap;
+        row-gap: 3rem;
+        >div {
+            width: 30%;
+        }
+    }
+    .footerPart .socialMediaPart .mailbox{
+        width: 70%;
+    }
+}
+@media (max-width: 575px) {
+    .footerPart .cityPart ul {
+        justify-content: space-between;
+
+        li {
+            width: 40%;
+        }
+    }
+
+    .footerPart .linkListPart {
+        row-gap: 3rem;
+        >div {
+            width: 50%;
+        }
+    }
+    .footerPart .socialMediaPart .mailbox{
+        width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    .footerPart .cityPart ul {
+        li {
+            width: 100%;
+        }
+    }
+
+    .footerPart .linkListPart {
+        row-gap: 3rem;
+        >div {
+            width: 100%;
+        }
+    }
+    .footerPart .socialMediaPart .mailbox{
+        width: 100%;
+    }
+    .footerPart .socialMediaPart .mailbox .inputWrapper{
+        flex-direction: column;
+        gap:0.5rem;
+        button{
+            width: 100%;
         }
     }
 }

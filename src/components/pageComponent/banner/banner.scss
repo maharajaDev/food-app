@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     gap:5vw;
+    
     .leftPart{
         width: 40%;
         .contentPart{
@@ -112,5 +113,28 @@
             width: 100%;
         }
 
+    }
+}
+
+@media (max-width: 1200px) {
+    .bannerSeaction .leftPart{
+        width: 50%;
+    }
+}
+@media (max-width: 575px) {
+    .bannerSeaction .leftPart{
+        width: 90%;
+    }
+    .bannerSeaction .rightPart{
+        display: none;
+    }
+
+}
+@media (max-width: 575px) {
+    .bannerSeaction .leftPart .findFoodPart .searchInput{
+        flex-wrap: wrap;
+    }
+    .bannerSeaction .leftPart .findFoodPart .searchInput button{
+        width: 100%;
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./notFoundPage.css"
+import "./notFoundPage.scss"
 export default function NotFoundPage() {
     return (
         <section className='notFoundPage'>NotFoundPage</section>

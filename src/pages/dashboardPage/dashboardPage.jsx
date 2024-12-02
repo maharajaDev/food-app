@@ -162,9 +162,10 @@ export default function DashboardPage() {
                         }}
                         // autoplay={{ delay: 2000 }}
                         breakpoints={{
-                            320: { slidesPerView: 3 },
-                            480: { slidesPerView: 4 },
-                            768: { slidesPerView: 5 },
+                            320: { slidesPerView: 1 },
+                            360: { slidesPerView: 2 },
+                            480: { slidesPerView: 3 },
+                            768: { slidesPerView: 4 },
                             1024: { slidesPerView: 6 },
                         }}
                         className="mySwiper">
