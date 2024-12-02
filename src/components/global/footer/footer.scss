@@ -1,0 +1,147 @@
+.footerPart {
+    padding: 4rem 13vw;
+    background-color: #212121;
+    color: #fff;
+
+    .cityPart {
+        margin-bottom: 3rem;
+
+        ul {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+
+            li {
+                width: calc(100% / 5 - 1rem);
+
+                a {
+                    color: #fff;
+                    font-size: 0.9rem;
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
+
+                }
+            }
+        }
+    }
+
+    hr {
+        margin: 1rem 0;
+        border: 1px solid #4d4d4d;
+    }
+
+    .linkListPart {
+        width: 100%;
+        display: flex;
+        margin-top: 3rem;
+
+        >div {
+            width: calc(100% / 4.5);
+
+            h2 {
+                margin-bottom: 1rem;
+                font-size: 1.3rem;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+
+                li {
+
+                    a {
+                        color: #fff;
+                        font-size: 0.9rem;
+
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .socialMediaPart {
+        margin-top: 3rem;
+
+        .socialMediaLinks {
+            h2 {
+                color: gray;
+                font-size: 1.4rem;
+            }
+
+            ul {
+                margin-top: 1rem;
+                display: flex;
+                gap: 1rem;
+
+                li {
+                    a {
+                        color: gray;
+                        font-size: 2rem;
+                        transition: all 0.4s;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mailbox {
+            width: 40%;
+            padding: 1rem 0;
+
+            p {
+                font-size: 1.4rem;
+                color: #a8a8a8;
+                font-weight: 900;
+            }
+
+            .inputWrapper {
+                display: flex;
+                gap: 2rem;
+                margin-top: 1rem;
+
+                .input {
+                    width: 100%;
+                    display: flex;
+                    background-color: gray;
+                    padding: 0.5rem;
+                    border-radius: 10px;
+                    span {
+                        font-size: 1.5rem;
+                        display: flex;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 0 0.5rem;
+                        font-size: 1rem;
+                        color: #fff;
+                        border: none;
+                        background-color: transparent;
+
+                        &::placeholder {
+                            color: #c9c9c9;
+                        }
+                    }
+                }
+
+                button {
+                    width: fit-content;
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    background-color: var(--primaryColor);
+                }
+            }
+        }
+    }
+}

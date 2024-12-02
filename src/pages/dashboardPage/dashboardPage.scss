@@ -12,30 +12,189 @@
     }
 
     .workSeaction {
-        padding:3rem 13vw;
+        padding: 3rem 13vw;
         margin-top: 3rem;
         background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
-        .titlePart{
+
+        .titlePart {
             width: 100%;
             text-align: center;
-            color:var(--secondaryColor);
+            color: var(--secondaryColor);
             text-transform: capitalize;
             margin-bottom: 5rem;
-            h2{
+
+            h2 {
                 font-size: 2.5rem;
             }
         }
-        .cardWrapper {
 
+        .cardWrapper {
             width: 100%;
             display: flex;
+            justify-content: center;
             gap: 2rem;
-         
 
             >div {
-                width: calc(100% / 4 - 2rem);
+                width: calc(100% / 4.5 - 2rem);
             }
         }
 
+    }
+
+    .popularItems {
+        padding: 3rem 10vw;
+
+        .titlePart {
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .silderWrapper {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .sliderBtn {
+                background-color: transparent;
+                border: none;
+                background-color: var(--primaryColor);
+                display: flex;
+                font-size: 2rem;
+                color: #fff;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: all 0.2s;
+
+                &:active {
+                    transform: scale(0.9);
+                }
+            }
+        }
+
+    }
+
+    .featuredSection {
+        padding: 3rem 13vw;
+
+        .titlePart {
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .restaurantCardWrapper {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 3rem;
+            column-gap: 1rem;
+
+            >div {
+                width: calc(100% / 4 - 1rem);
+            }
+        }
+
+        >button {
+            width: fit-content;
+            margin: 3rem auto 0;
+        }
+    }
+
+    .searchFoodSeaction {
+        padding: 3rem 13vw;
+
+        .topPart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 0;
+
+            .titlePart {
+                h3 {
+                    font-size: 2rem;
+                }
+            }
+
+            .controlPart {
+                display: flex;
+                gap: 2rem;
+
+                >button {
+                    font-size: 1rem;
+                    display: flex;
+                    align-items: center;
+                    background-color: transparent;
+                    border: none;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    cursor: pointer;
+                    color: gray;
+
+                    span {
+                        font-size: 1.5rem;
+                        display: flex;
+                    }
+                }
+
+                >div {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    >button {
+                        background-color: var(--primaryColor);
+                        border: none;
+                        font-size: 2rem;
+                        color: #fff;
+                        border-radius: 100px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .processToOrderWrapper {
+        padding: 3rem 13vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        .processToOrderPart:nth-child(2) {
+            .contentPart {
+                order: 2;
+            }
+
+            .imgPart {
+                order: 1;
+            }
+        }
+    }
+
+    .bestDealPart{
+        padding: 5rem ;
+        background-image: url("../../../public/images/bg2.png");
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        div{
+            width: 40%;
+            margin: auto;
+            h3{
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                color:#fff;
+                text-align: center;
+            }
+            button{
+                width: fit-content;
+                margin: auto;
+            }
+        }
     }
 }

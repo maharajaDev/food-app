@@ -1,0 +1,15 @@
+.searchFoodPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img{
+        width:150px;
+        border-radius: 200px;
+    }
+    p{
+        margin-top: 1rem;
+        font-weight: 600;
+    }
+}

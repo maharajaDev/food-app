@@ -13,3 +13,8 @@ img {
     width: 100%;
     display: flex;
 }
+
+button:disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}

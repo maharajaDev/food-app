@@ -7,4 +7,16 @@
     border:none;
     font-size: 1rem;
     font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    &:hover{
+        background-color: #f65a00;
+    }
+    span{
+        font-size: 1.3rem;
+        display: flex;
+    }
 }
